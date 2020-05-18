@@ -31,6 +31,15 @@ Loop, Files, driver.zip
 	Unz(A_LoopFileLongPath, driverpath)
 }
 
+FileGetSize, fileSize , driver.zip, K
+If fileSize < 10
+{
+	MsgBox, Error with driver download, try again later or try to change to stable/canary
+	FileRemoveDir, driver , 1
+	FileDelete, driver.zip
+	ExitApp
+}
+
 FileSelectFile, HeavenFile, 3, c:\7th Heaven, , 7th*.exe
 
 if ErrorLevel
