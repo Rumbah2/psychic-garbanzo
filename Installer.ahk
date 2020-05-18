@@ -85,6 +85,9 @@ Loop, Files, %FF7File%
 	FileMove, %A_LoopFileDir%\FFNx.dll, %A_LoopFileDir%\7H_GameDriver.dll
 }
 
+FileRemoveDir, driver , 1
+FileDelete, driver.zip
+
 MsgBox, All Done
 
 
