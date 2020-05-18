@@ -40,7 +40,7 @@ If fileSize < 10
 	ExitApp
 }
 
-FileSelectFile, HeavenFile, 3, c:\7th Heaven, , 7th*.exe
+FileSelectFile, HeavenFile, 3, c:\7th Heaven, Select the 7th Heaven exe in your 7th Heaven directory, 7th*.exe
 
 if ErrorLevel
 	{
