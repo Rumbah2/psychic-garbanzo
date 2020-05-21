@@ -9,7 +9,7 @@ FileDelete, driver.zip
 
 MsgBox, 4, ,Select Yes to download the stable driver or No to download the latest canary.`n`nDownloading takes some time, just wait for the next Box to appear
 IfMsgBox Yes
-	UrlDownloadToFile, https://github.com/julianxhokaxhiu/FFNx/releases/download/1.7.1/FFNx-FF7_1998-v1.7.1.0.zip, driver.zip
+	UrlDownloadToFile, https://github.com/julianxhokaxhiu/FFNx/releases/download/1.7.2/FFNx-FF7_1998-v1.7.2.0.zip, driver.zip
 else
 	UrlDownloadToFile, https://github.com/julianxhokaxhiu/FFNx/releases/download/canary/FFNx-FF7_1998-Canary.zip, driver.zip
 
